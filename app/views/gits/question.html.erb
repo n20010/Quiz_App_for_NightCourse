@@ -1,0 +1,11 @@
+<% provide(:title, "GithubArea<#{@ques.id}>") %>
+<div class="center jumbotron">
+  <h1>Github Area <%= @ques.id %></h1>
+  
+  <h2><%= @ques.question %></h2>
+  
+  <%= form_tag "/gits/#{@ques.id}/judge" do %>
+    <%= text_field_tag :answer %>
+    <%= submit_tag("done") %>
+  <% end %>
+</div>

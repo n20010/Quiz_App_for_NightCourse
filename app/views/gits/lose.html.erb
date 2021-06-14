@@ -1,0 +1,6 @@
+<% provide(:title, "GithubLose") %>
+<div class="center jumbotron">
+  <h1>You're Lose...</h1>
+  <%= link_to("I will Never Give Up", "/gits/#{params[:id]}/question", class: "btn btn-lg btn-primary")%>
+  <%= link_to("Answer", "/gits/#{params[:id]}/answer", class: "btn btn-lg btn-primary")%>
+</div>

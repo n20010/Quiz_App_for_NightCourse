@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>NightCourseApp</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
+  <%= render 'layouts/head' %>
   <body>
-    <%= yield %>
+    <%= render 'layouts/header' %>
+    <div class="container">
+      <%= yield %>
+      <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200px"),
+                      "https://rubyonrails.org/" %>
+      <%= render 'layouts/footer' %>
+    </div>
   </body>
 </html>

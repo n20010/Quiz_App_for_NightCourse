@@ -1,0 +1,6 @@
+<% provide(:title, "Githubanswer<#{params[:id]}>") %>
+<div class="center jumbotron">
+  <h2>Answer</h2>
+  <h1><%= @ques.answer %></h1>
+  <%= link_to("I will Never Give Up", "/gits/#{params[:id]}/question", class: "btn btn-lg btn-primary")%>
+</div>

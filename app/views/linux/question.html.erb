@@ -1,0 +1,11 @@
+<% provide(:title, "LinuxArea<#{@ques.id}>") %>
+<div class="center jumbotron">
+  <h1>Linux Area <%= @ques.id %></h1>
+  
+  <h2><%= @ques.question %></h2>
+  
+  <%= form_tag "/linux/#{@ques.id}/judge" do %>
+    <%= text_field_tag :answer %>
+    <%= submit_tag("done") %>
+  <% end %>
+</div>
