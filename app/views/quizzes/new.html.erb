@@ -5,7 +5,10 @@
   <%= form_tag "/quizzes/create" do %>
   
     <h3>Which area do you wanna add a new quiz?</h3>
-    <%= text_field_tag :area %>
+    <select name="area">
+      <option value="Linux">Linux</option>
+      <option value="Git">Git</option>
+    </select>
     <h3>Question</h3>
     <%= text_field_tag :question %>
     <h3>Answer</h3>
