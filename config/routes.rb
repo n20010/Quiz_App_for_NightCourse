@@ -11,6 +11,10 @@ Rails.application.routes.draw do
   get "/quizzes/linux", to: "quizzes#linux"
   get "/quizzes/github", to: "quizzes#github"
   get "/quizzes/linuxquiz", to: "quizzes#linuxquiz"
+  get "/quizzes/checkAdmin", to: "quizzes#checkAdmin"
+  post "/quizzes/conform", to: "quizzes#conform"
+  get "/quizzes/new", to: "quizzes#new"
+  post "quizzes/create", to: "quizzes#create"
   
   get "linux/:id/question", to: "linux#question"
   get "linux/:id/win", to: "linux#win"

@@ -1,0 +1,17 @@
+<% provide(:title, "new") %>
+<div class="center jumbotron">
+  <h1>QUIZ CREATOR</h1>
+  
+  <%= form_tag "/quizzes/create" do %>
+  
+    <h3>Which area do you wanna add a new quiz?</h3>
+    <%= text_field_tag :area %>
+    <h3>Question</h3>
+    <%= text_field_tag :question %>
+    <h3>Answer</h3>
+    <%= text_field_tag :answer %>
+    
+    <br><br> 
+    <%= submit_tag("done") %>
+  <% end %>
+</div>
